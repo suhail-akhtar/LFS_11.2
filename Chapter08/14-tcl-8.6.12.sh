@@ -1,6 +1,9 @@
 #!/bin/bash
 
 #Header
+cd $LFS/sources
+tar xvf tcl8.6.12-src.tar.gz
+cd tcl8.6.12-src
 
 tar -xf ../tcl8.6.12-html.tar.gz --strip-components=1
 
@@ -46,4 +49,6 @@ cp -v -r  ../html/* /usr/share/doc/tcl-8.6.12
 
 
 # Footer
-echo "Done - {0}"
+cd $LFS/sources
+rm -rf tcl8.6.12-src
+echo "Done -tcl8.6.12-src.tar.gz"
