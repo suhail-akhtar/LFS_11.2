@@ -38,6 +38,7 @@ CONFIG_SITE=$LFS/usr/share/config.site
 export LFS LC_ALL LFS_TGT PATH CONFIG_SITE
 EOF
 
+
 source ~/.bash_profile
 
 export MAKEFLAGS='-j4'
